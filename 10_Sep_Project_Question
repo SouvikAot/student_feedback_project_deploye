@@ -1,0 +1,140 @@
+# Scenario:
+ 
+# You are building the backend logic of a product and order management system for an e-commerce platform like Amazon or Flipkart. The system needs to handle products, users, payments, discounts, and different order behaviors dynamically.
+ 
+# Q1. Product Search System (Static Polymorphism)
+ 
+# Problem Statement:
+# Implement a class ProductSearch that allows searching products with different combinations of criteria (name, category, price range).
+ 
+# Requirements:
+ 
+# Use default arguments and/or *args, **kwargs to simulate method overloading.
+ 
+# Allow the following types of searches:
+ 
+# Only by name
+ 
+# Name and category
+ 
+# Name, category, and price range
+ 
+ 
+# Q2. Cart System with Quantity Variations (Static Polymorphism)
+ 
+# Problem Statement:
+# Design a class Cart that can add multiple products with variable quantities using *args or **kwargs.
+ 
+# Requirements:
+ 
+# Add multiple products at once with name and quantity
+ 
+# Simulate static polymorphism using variable arguments
+ 
+ 
+# Q3. Discount Application (Static Polymorphism)
+ 
+# Problem Statement:
+# Create a class Discount that allows applying different types of discounts:
+ 
+# Flat discount
+ 
+# Percentage discount
+ 
+# Buy One Get One
+ 
+# Use static polymorphism to overload the method using default parameters or *args
+ 
+ 
+# Q4. Payment System (Dynamic Polymorphism)
+ 
+# Problem Statement:
+# Implement a base class Payment and subclasses CreditCardPayment, UPIPayment, and CODPayment. Each should override a method pay().
+ 
+# Requirements:
+ 
+# Override pay() method in each class to simulate different payment methods
+
+
+
+class ProductSearch:
+    def search(self, name=None, category=None, price_range=None):
+        if name and category and price_range:
+            print(f"Searching for products named '{name}' in category '{category}' with price range {price_range}")
+        elif name and category:
+            print(f"Searching for products named '{name}' in category '{category}'")
+        elif name:
+            print(f"Searching for products named '{name}'")
+        else:
+            print("Showing all products")
+
+ps = ProductSearch()
+
+ps.search() 
+ps.search(name="Shoes")
+ps.search(name="Shoes", category="Footwear")
+ps.search(name="Shoes", category="Footwear", price_range=(1000, 5000))
+
+
+class Cart:
+    def __init__(self):
+        self.items = {}
+
+    def add_products(self, **kwargs):
+        for product, quantity in kwargs.items():
+            if product in self.items:
+                self.items[product] += quantity
+            else:
+                self.items[product] = quantity
+        print("Products added to cart:", self.items)
+
+
+cart = Cart()
+cart.add_products(apple=2, banana=5)
+cart.add_products(banana=3, orange=1)
+
+
+class Discount:
+    def apply_discount(self, *args):
+        if len(args) == 1 and isinstance(args[0], (int, float)):
+            print(f"Applying flat discount of ₹{args[0]}")
+        elif len(args) == 2 and args[1] == 'percent':
+            print(f"Applying percentage discount of {args[0]}%")
+        elif len(args) == 1 and args[0] == 'b1g1':
+            print("Applying Buy One Get One Free offer")
+        else:
+            print("Invalid discount parameters")
+
+
+d = Discount()
+d.apply_discount(100)              
+d.apply_discount(20, 'percent')    
+d.apply_discount('b1g1')           
+
+
+class Payment:
+    def pay(self, amount):
+        print(f"Paying ₹{amount} using generic payment method")
+
+class CreditCardPayment(Payment):
+    def pay(self, amount):
+        print(f"Paying ₹{amount} using Credit Card")
+
+class UPIPayment(Payment):
+    def pay(self, amount):
+        print(f"Paying ₹{amount} via UPI")
+
+class CODPayment(Payment):
+    def pay(self, amount):
+        print(f"Paying ₹{amount} with Cash on Delivery")
+
+payments = [
+    CreditCardPayment(),
+    UPIPayment(),
+    CODPayment()
+]
+
+for p in payments:
+    p.pay(999)
+
+

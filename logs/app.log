@@ -1,0 +1,110 @@
+2025-09-20 21:30:13,557 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:30:13,557 - ERROR - Registration failed for email=souvik.dutta.21@aot.edu.in: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:30:13,557 - INFO - Database disconnected.
+2025-09-20 21:31:32,403 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:31:32,404 - ERROR - Registration failed for email=souvik.dutta.21@aot.edu.in: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:31:32,404 - INFO - Database disconnected.
+2025-09-20 21:42:55,419 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:42:55,419 - ERROR - Registration failed for email=souvik.dutta.21@aot.edu.in: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:42:55,419 - INFO - Database disconnected.
+2025-09-20 21:45:28,064 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:45:28,064 - ERROR - Error during student login for souvik.dutta.21@aot.edu.in: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:45:28,064 - INFO - Database disconnected.
+2025-09-20 21:45:38,474 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:45:38,474 - ERROR - Error during student login for souvik.dutta.21@aot.edu.in: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:45:38,474 - INFO - Database disconnected.
+2025-09-20 21:58:08,200 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:58:08,200 - ERROR - Registration failed for email=souvik.dutta.21@aot.edu.in: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 21:58:08,200 - INFO - Database disconnected.
+2025-09-20 22:01:55,119 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 22:01:55,119 - ERROR - Registration failed for email=souvik.dutta.21@aot.edu.in: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 22:01:55,119 - INFO - Database disconnected.
+2025-09-20 22:01:59,718 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 22:01:59,718 - ERROR - Registration failed for email=souvik.dutta.21@aot.edu.in: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 22:01:59,718 - INFO - Database disconnected.
+2025-09-20 22:02:10,144 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 22:02:10,144 - ERROR - Registration failed for email=souvik.dutta.21@aot.edu.in: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-20 22:02:10,144 - INFO - Database disconnected.
+2025-09-22 09:21:50,168 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-22 09:21:50,169 - ERROR - Registration failed for email=krish@gmail.com: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-22 09:21:50,169 - INFO - Database disconnected.
+2025-09-22 09:28:18,126 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-22 09:28:18,126 - ERROR - Registration failed for email=titli@gmail.com: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-22 09:28:18,126 - INFO - Database disconnected.
+2025-09-22 09:32:24,468 - ERROR - Database connection failed: 1049 (42000): Unknown database 'feedback_system'
+2025-09-22 09:32:24,468 - ERROR - Registration failed for email=kol@mindteck.com: Could not connect to database: 1049 (42000): Unknown database 'feedback_system'
+2025-09-22 09:32:24,468 - INFO - Database disconnected.
+2025-09-22 09:37:21,277 - ERROR - Database connection failed: 1698 (28000): Access denied for user 'root'@'localhost'
+2025-09-22 09:37:21,277 - ERROR - Error during student login for kol@mindteck.com: Could not connect to database: 1698 (28000): Access denied for user 'root'@'localhost'
+2025-09-22 09:37:21,277 - INFO - Database disconnected.
+2025-09-22 09:38:01,743 - ERROR - Database connection failed: 1698 (28000): Access denied for user 'root'@'localhost'
+2025-09-22 09:38:01,743 - ERROR - Registration failed for email=souvikbantu@gmail.com: Could not connect to database: 1698 (28000): Access denied for user 'root'@'localhost'
+2025-09-22 09:38:01,743 - INFO - Database disconnected.
+2025-09-22 09:45:55,831 - ERROR - Database connection failed: 1045 (28000): Access denied for user 'root@localhost'@'localhost' (using password: YES)
+2025-09-22 09:45:55,831 - ERROR - Registration failed for email=jfnqjf@gmail.com: Could not connect to database: 1045 (28000): Access denied for user 'root@localhost'@'localhost' (using password: YES)
+2025-09-22 09:45:55,831 - INFO - Database disconnected.
+2025-09-22 09:48:11,658 - ERROR - Database connection failed: 1045 (28000): Access denied for user 'root@localhost'@'localhost' (using password: YES)
+2025-09-22 09:48:11,658 - ERROR - Error during student login for souvikbantu@gmail.com: Could not connect to database: 1045 (28000): Access denied for user 'root@localhost'@'localhost' (using password: YES)
+2025-09-22 09:48:11,658 - INFO - Database disconnected.
+2025-09-22 09:48:39,078 - ERROR - Database connection failed: 1045 (28000): Access denied for user 'root@localhost'@'localhost' (using password: YES)
+2025-09-22 09:48:39,078 - ERROR - Registration failed for email=jk@gmail.com: Could not connect to database: 1045 (28000): Access denied for user 'root@localhost'@'localhost' (using password: YES)
+2025-09-22 09:48:39,078 - INFO - Database disconnected.
+2025-09-22 12:38:55,959 - ERROR - Database connection failed: 1045 (28000): Access denied for user 'appuser'@'localhost' (using password: YES)
+2025-09-22 12:38:55,959 - ERROR - Registration failed for email=gjgj@gmail.com: Could not connect to database: 1045 (28000): Access denied for user 'appuser'@'localhost' (using password: YES)
+2025-09-22 12:38:55,959 - INFO - Database disconnected.
+2025-09-22 12:44:26,443 - INFO - Database connected successfully.
+2025-09-22 12:44:26,445 - ERROR - Database query error: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 12:44:26,445 - ERROR - Registration failed for email=kdey@gmail.com: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 12:44:26,446 - INFO - Database disconnected.
+2025-09-22 12:49:11,379 - INFO - Database connected successfully.
+2025-09-22 12:49:11,380 - ERROR - Database query error: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 12:49:11,381 - ERROR - Registration failed for email=kdey@gmail.com: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 12:49:11,381 - INFO - Database disconnected.
+2025-09-22 12:49:36,864 - INFO - Database connected successfully.
+2025-09-22 12:49:36,865 - ERROR - Database query error: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 12:49:36,865 - ERROR - Registration failed for email=gojo@gmail.com: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 12:49:36,868 - INFO - Database disconnected.
+2025-09-22 12:58:51,160 - INFO - Database connected successfully.
+2025-09-22 12:58:51,161 - ERROR - Database query error: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 12:58:51,161 - ERROR - Registration failed for email=gojo@gmail.com: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 12:58:51,162 - INFO - Database disconnected.
+2025-09-22 12:59:00,518 - INFO - Database connected successfully.
+2025-09-22 12:59:00,519 - ERROR - Database query error: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 12:59:00,519 - ERROR - Registration failed for email=souvikbantu@gmail.com: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 12:59:00,520 - INFO - Database disconnected.
+2025-09-22 13:01:47,272 - INFO - Database connected successfully.
+2025-09-22 13:01:47,273 - ERROR - Database query error: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 13:01:47,274 - ERROR - Registration failed for email=jk@gmail.com: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 13:01:47,274 - INFO - Database disconnected.
+2025-09-22 13:08:59,457 - INFO - Database connected successfully.
+2025-09-22 13:08:59,460 - ERROR - Database query error: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 13:08:59,460 - ERROR - Registration failed for email=kol@mindteck.com: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 13:08:59,462 - INFO - Database disconnected.
+2025-09-22 13:11:12,616 - INFO - Database connected successfully.
+2025-09-22 13:11:12,617 - ERROR - Database query error: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 13:11:12,617 - ERROR - Registration failed for email=kol@mindteck.com: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 13:11:12,618 - INFO - Database disconnected.
+2025-09-22 13:11:20,989 - INFO - Database connected successfully.
+2025-09-22 13:11:20,990 - ERROR - Database query error: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 13:11:20,990 - ERROR - Registration failed for email=souvikbantu@gmail.com: 1146 (42S02): Table 'feedback_system.students' doesn't exist
+2025-09-22 13:11:20,991 - INFO - Database disconnected.
+2025-09-22 13:17:10,698 - INFO - Database connected successfully.
+2025-09-22 13:17:10,708 - ERROR - Registration failed for email=ddds@gmail.com: 'DatabaseConnection' object has no attribute 'commit'
+2025-09-22 13:17:10,709 - INFO - Database disconnected.
+2025-09-22 13:25:12,992 - INFO - Registration successful for email=jk@gmail.com
+2025-09-22 13:25:52,431 - INFO - Registration successful for email=sd8714040@gmail.com
+2025-09-22 13:26:08,975 - INFO - Student login successful email=sd8714040@gmail.com
+2025-09-22 13:26:33,199 - INFO - Feedback submitted by student_id=3 for course_id=1
+2025-09-22 13:32:23,597 - WARNING - Admin login failed username=admin
+2025-09-22 13:32:48,215 - WARNING - Admin login failed username=admin
+2025-09-22 13:41:32,395 - WARNING - Admin login failed username=admin
+2025-09-22 13:45:28,385 - WARNING - Admin login failed username=admin
+2025-09-22 13:45:36,292 - WARNING - Admin login failed username=admin
+2025-09-22 13:48:51,432 - WARNING - Admin login failed username=jk@gmail.com
+2025-09-22 13:49:01,413 - WARNING - Admin login failed username=admin
+2025-09-22 13:49:12,158 - WARNING - Admin login failed username=admin
+2025-09-22 13:56:53,847 - WARNING - Admin login failed username=admin
+2025-09-22 14:07:30,992 - WARNING - Admin login failed username=admin
+2025-09-22 14:19:59,752 - INFO - Admin login successful username=admin
+2025-09-22 14:20:59,851 - INFO - Admin login successful username=admin
+2025-09-22 14:23:49,267 - INFO - Admin login successful username=admin

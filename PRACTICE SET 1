@@ -1,0 +1,76 @@
+# Write a Python program that manages a list of student scores. Perform the following operations step-by-step:
+# Create an empty list to store scores.
+# Append the scores: 85, 90, 78, 92, 88
+# Insert the score 80 at index 
+# Remove the score 92 from the list
+# Sort the scores in ascending order
+# Reverse the list
+# Find and print the maximum and minimum score
+# Check if 90 is in the list
+# Print the total number of scores
+# Slice and print the first three scores
+
+Student_score=[88,98,75]
+print("student score ",Student_score)
+
+
+Score=[]
+Score.extend([85,90,78,92,88])
+
+CopyScore=Score.copy
+
+Score.insert(2,80)
+print("After insert 80 ",Score)
+
+Score.remove(92)
+print("After removing 92:",Score)
+
+Score.reverse()
+print("After reverse: ",Score)
+
+print("max val",max(Score))
+
+print("min val",min(Score))
+
+
+if 90 in Score:
+    print("90 is present")
+else:
+    print("90 is not present")
+
+
+print("Total number of score ",len(Score))
+
+
+for i in range(3):
+    print(Score[i])
+
+
+for item in Score:
+    print(item)
+
+print("last Element",Score[-1])
+
+Score[2]=95
+print("Updated list ",Score)
+
+Copied_score=Score.copy()
+print("Copied list ",Copied_score)
+
+score = int(input("Enter the score: "))
+
+if score > 90:
+    grade = 'A'
+else:
+    if score > 80:
+        grade = 'B'
+    else:
+        if score > 70:
+            grade = 'C'
+        else:
+            if score > 60:
+                grade = 'D'
+            else:
+                grade = 'F'
+
+print(f"The grade is: {grade}")

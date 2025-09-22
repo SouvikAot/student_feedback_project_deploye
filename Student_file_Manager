@@ -1,0 +1,127 @@
+
+#  File Handling:
+# A school wants to maintain student records using a text file.
+ 
+# You are required to write a Python program that performs the following file handling operations step by step:
+ 
+# 1) Write Operation:
+# - Create a file named students.txt.
+# - Write details of students (Name, Roll Number, Marks) into the file.
+ 
+# 2) Read Operation:
+# - Read the content of students.txt and display it on the screen.
+ 
+# 3) Rename Operation:
+# - Rename the file from students.txt to student_records.txt.
+ 
+# 4) Directory Operations:
+# - Create a directory called SchoolData.
+# - Move the renamed file student_records.txt into this directory.
+# - List all files present in SchoolData to confirm the file is inside.
+ 
+# 5) Delete Operation:
+# - Delete the file student_records.txt from inside the directory.
+ 
+# Finally, delete the SchoolData directory.
+ 
+# Do create a menu taking the user input and then perform the operation
+
+import os
+import shutil
+
+def write_students():
+    with open("students.txt", "w") as file:
+        num = int(input("How many students do you want to enter? "))
+        for _ in range(num):
+            name = input("Enter student name: ")
+            roll = input("Enter roll number: ")
+            marks = input("Enter marks: ")
+            file.write(f"{name}, {roll}, {marks}\n")
+    print("Student data written to students.txt\n")
+
+
+def read_students():
+    try:
+        with open("students.txt", "r") as file:
+            content = file.read()
+            print("\nContents of students.txt:")
+            print(content)
+    except FileNotFoundError:
+        print(" File students.txt not found.\n")
+
+
+def rename_file():
+    try:
+        os.rename("students.txt", "student_records.txt")
+        print("File renamed to student_records.txt\n")
+    except FileNotFoundError:
+        print("File students.txt not found to rename.\n")
+
+
+def move_and_list_file():
+    folder = "SchoolData"
+    file = "student_records.txt"
+    
+    if not os.path.exists(folder):
+        os.mkdir(folder)
+        print(f" Directory '{folder}' created.")
+    
+    try:
+        shutil.move(file, folder)
+        print(f"File moved to {folder}/")
+
+        print(f"\nFiles in {folder}:")
+        for f in os.listdir(folder):
+            print(f"- {f}")
+        print()
+    except FileNotFoundError:
+        print(" File student_records.txt not found to move.\n")
+
+
+def delete_all():
+    folder = "SchoolData"
+    file_path = os.path.join(folder, "student_records.txt")
+    
+    if os.path.exists(file_path):
+        os.remove(file_path)
+        print(" File student_records.txt deleted.")
+    else:
+        print(" File not found to delete.")
+    
+    if os.path.exists(folder):
+        os.rmdir(folder)
+        print("Directory SchoolData deleted.\n")
+    else:
+        print("Directory SchoolData not found.\n")
+
+
+def menu():
+    while True:
+        print("\n Student File Manager Menu:")
+        print("1. Write student data to file")
+        print("2. Read student data from file")
+        print("3. Rename file")
+        print("4. Move file to directory and list contents")
+        print("5. Delete file and directory")
+        print("6. Exit")
+
+        choice = input("Enter your choice (1-6): ")
+
+        if choice == '1':
+            write_students()
+        elif choice == '2':
+            read_students()
+        elif choice == '3':
+            rename_file()
+        elif choice == '4':
+            move_and_list_file()
+        elif choice == '5':
+            delete_all()
+        elif choice == '6':
+            print("Exiting program. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    menu()

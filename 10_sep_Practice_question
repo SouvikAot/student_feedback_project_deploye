@@ -1,0 +1,196 @@
+# Static Polymorphism – Flight Search System
+# Problem Statement:
+# Implement static polymorphism using default arguments or variable-length arguments in a method called search_flights().
+ 
+# Requirements:
+# Create a class FlightSearch
+# Implement search_flights() using:
+# Default arguments
+# Variable-length arguments (*args)
+ 
+# Search by:
+# Only airline
+# Airline + destination
+# Airline + destination + date
+ 
+# Hint: Python doesn’t support true method overloading, so simulate it via default/optional/*args.
+ 
+# class FlightSearch:
+#     def search_flights(self, airline=None, destination=None, date=None):
+#         if airline and destination and date:
+#             print(f"Searching flights by {airline}, to {destination} on {date}")
+#         elif airline and destination:
+#             print(f"Searching flights by {airline}, to {destination}")
+#         elif airline:
+#             print(f"Searching flights by {airline}")
+#         else:
+#             print("Showing all available flights")
+ 
+# Q7. Dynamic Polymorphism – Check-in System
+ 
+# Problem Statement:
+# Model a check-in system where each passenger type (e.g., Economy, Business) has a different check-in process.
+ 
+# Requirements:
+ 
+# Create a base class CheckIn
+ 
+# Override the check_in_process() method in subclasses EconomyPassenger and BusinessPassenger
+ 
+# class CheckIn:
+#     def check_in_process(self):
+#         print("General check-in procedure")
+ 
+# class EconomyPassenger(CheckIn):
+#     def check_in_process(self):
+#         print("Economy check-in: Self-service kiosk")
+ 
+# class BusinessPassenger(CheckIn):
+#     def check_in_process(self):
+#         print("Business check-in: Priority desk")
+ 
+# Q8. Dynamic Polymorphism – Notification System
+ 
+# Problem Statement:
+# Model a notification system that behaves differently based on communication type (Email, SMS, App Notification).
+ 
+# Requirements:
+ 
+# Base class: Notification
+ 
+# Subclasses: EmailNotification, SMSNotification, AppNotification
+ 
+# Override send() method in each subclass
+
+# Q9. Static Polymorphism – Cargo Calculation System
+# Problem Statement:
+# Create a method to calculate total cargo weight using static polymorphism.
+ 
+# Requirements:
+# Use method with variable-length arguments (*args)
+ 
+# Sum total cargo weight for a given list of items
+# class Cargo:
+#     def calculate_weight(self, *weights):
+#         total = sum(weights)
+#         print(f"Total cargo weight: {total} kg")
+ 
+# Q10. Dynamic Polymorphism – Aircraft Maintenance Logs
+ 
+# Problem Statement:
+# Maintain aircraft logs with different levels of detail. Use dynamic polymorphism to customize log formats.
+ 
+# Requirements:
+# Base class: MaintenanceLog
+# Subclasses: BasicLog, DetailedLog
+# Override method display_log() in each subclass
+
+
+# Using default arguments
+class FlightSearch:
+    def search_flights(self, airline=None, destination=None, date=None):
+        if airline and destination and date:
+            print(f"Searching flights by {airline}, to {destination} on {date}")
+        elif airline and destination:
+            print(f"Searching flights by {airline}, to {destination}")
+        elif airline:
+            print(f"Searching flights by {airline}")
+        else:
+            print("Showing all available flights")
+
+
+# Using *args
+class FlightSearchArgs:
+    def search_flights(self, *args):
+        if len(args) == 1:
+            print(f"Searching flights by {args[0]}")
+        elif len(args) == 2:
+            print(f"Searching flights by {args[0]}, to {args[1]}")
+        elif len(args) == 3:
+            print(f"Searching flights by {args[0]}, to {args[1]} on {args[2]}")
+        else:
+            print("Showing all available flights")
+
+class CheckIn:
+    def check_in_process(self):
+        print("General check-in procedure")
+
+class EconomyPassenger(CheckIn):
+    def check_in_process(self):
+        print("Economy check-in: Self-service kiosk")
+
+class BusinessPassenger(CheckIn):
+    def check_in_process(self):
+        print("Business check-in: Priority desk")
+
+class Notification:
+    def send(self):
+        print("Sending a general notification")
+
+class EmailNotification(Notification):
+    def send(self):
+        print("Sending email notification")
+
+class SMSNotification(Notification):
+    def send(self):
+        print("Sending SMS notification")
+
+class AppNotification(Notification):
+    def send(self):
+        print("Sending app notification")
+
+
+class Cargo:
+    def calculate_weight(self, *weights):
+        total = sum(weights)
+        print(f"Total cargo weight: {total} kg")
+
+
+class MaintenanceLog:
+    def display_log(self):
+        print("General maintenance log")
+
+class BasicLog(MaintenanceLog):
+    def display_log(self):
+        print("Basic log: Checked engines and fuel levels")
+
+class DetailedLog(MaintenanceLog):
+    def display_log(self):
+        print("Detailed log: Engine check, fuel, hydraulics, avionics, and control systems")
+
+
+
+# Q6
+fs = FlightSearch()
+fs.search_flights("Delta")
+fs.search_flights("Delta", "New York")
+fs.search_flights("Delta", "New York", "2025-09-15")
+
+fs_args = FlightSearchArgs()
+fs_args.search_flights("Delta")
+fs_args.search_flights("Delta", "New York")
+fs_args.search_flights("Delta", "New York", "2025-09-15")
+
+# Q7
+passenger1 = EconomyPassenger()
+passenger2 = BusinessPassenger()
+passenger1.check_in_process()
+passenger2.check_in_process()
+
+# Q8
+not1 = EmailNotification()
+not2 = SMSNotification()
+not3 = AppNotification()
+not1.send()
+not2.send()
+not3.send()
+
+# Q9
+cargo = Cargo()
+cargo.calculate_weight(120, 230, 450, 90)
+
+# Q10
+log1 = BasicLog()
+log2 = DetailedLog()
+log1.display_log()
+log2.display_log()
