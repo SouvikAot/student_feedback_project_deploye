@@ -1,6 +1,8 @@
 from flask import Flask
 import os
 from config import Config
+from flask import Flask, render_template, request, redirect, url_for, flash
+
 
 # Ensure logs directory exists
 os.makedirs(os.path.dirname(Config.LOG_FILE), exist_ok=True)
@@ -23,7 +25,7 @@ def create_app():
     # Simple index route
     @app.route('/')
     def index():
-        return "Student Feedback Management System - Visit /register or /login"
+        return render_template("base.html",title ="base")
 
     return app
 
