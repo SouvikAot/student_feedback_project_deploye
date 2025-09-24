@@ -37,8 +37,10 @@ def list_routes(app):
     for line in sorted(output):
         print(line)
 
+# Add this at the bottom of app.py
+app = create_app()
+
 if __name__ == "__main__":
-    app = create_app()
     print("\n=== Registered Routes ===")
     list_routes(app)
     print("=========================\n")
